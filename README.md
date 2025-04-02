@@ -6,4 +6,5 @@ Creating code in VSCode right now.
 
 
 ! I just found out there is a easier way to create calculator. Here are files called "calculatorek" and "kalkulatorek". These are final files and done calculators. !
+
 End of the project.
