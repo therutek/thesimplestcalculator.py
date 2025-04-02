@@ -1,44 +1,44 @@
-print("Witaj w kalkulatorze!")
+print("Welcome to The Simplest Calculator!")
 
-liczba1 = float(input("Podaj pierwszą liczbę: "))                 # Float konwertuje tekst na liczbę zmiennoprzecinkową, np. 3, 14.2, 1.24 itd.
-liczba2 = float(input("Podaj drugą liczbę: "))
-operacja = input("Wybierz operację (+, -, *, /): ")
+number1 = float(input("Enter the first number: "))                 # Float konwertuje tekst na liczbę zmiennoprzecinkową, np. 3, 14.2, 1.24 itd.
+number2 = float(input("Enter the second number: "))
+operation = input("Select operation (+, -, *, /): ")
 
-if operacja == "+":
-    wynik = liczba1 + liczba2
-elif operacja == "-":
-    wynik = liczba1 - liczba2
-elif operacja == "*":
-    wynik = liczba1 * liczba2
-elif operacja == "/":
-    if liczba2 != 0:
-        wynik = liczba1 / liczba2
+if operation == "+":
+    result = number1 + number2
+elif operation == "-":
+    result = number1 - number2
+elif operation == "*":
+    result = number1 * number2
+elif operation == "/":
+    if number2 != 0:
+        result = number1 / number2
     else:
-        wynik = "Błąd! Nie można dzielić przez zero."
+        result = "Error! Can't divide by zero."
 else:
-    wynik = "Nieznana operacja!"
+    result = "Operation unknown!"
 
-print("Wynik:", wynik)
+print("Result:", result)
 
-kolejna = input("Czy chcesz wykonać kolejne obliczenia? (tak/nie): ")
-while kolejna == "tak":           # Pętla "while" pozwala na wielokrotne wykonywanie tego samego kodu
-    liczba1 = float(input("Podaj pierwszą liczbę: "))
-    liczba2 = float(input("Podaj drugą liczbę: "))
-    operacja = input("Wybierz operację (+, -, *, /): ")
+next = input("Do you wish to perform further calculations? (yes/no): ")
+while next == "yes":           # Pętla "while" pozwala na wielokrotne wykonywanie tego samego kodu
+    number1 = float(input("Enter the first number: "))
+    number2 = float(input("Enter the second number: "))
+    operation = input("Select operation (+, -, *, /): ")
 
-    if operacja == "+":
-        wynik = liczba1 + liczba2
-    elif operacja == "-":
-        wynik = liczba1 - liczba2
-    elif operacja == "*":
-        wynik = liczba1 * liczba2
-    elif operacja == "/":
-        if liczba2 != 0:
-            wynik = liczba1 / liczba2
+    if operation == "+":
+        result = number1 + number2
+    elif operation == "-":
+        result = number1 - number2
+    elif operation == "*":
+        result = number1 * number2
+    elif operation == "/":
+        if number2 != 0:
+            result = number1 / number2
         else:
-            wynik = "Błąd! Nie można dzielić przez zero."
+            result = "Error! Can't divide by zero."
     else:
-        wynik = "Nieznana operacja!"
+        result = "Operation unknown!"
 
-    print("Wynik:", wynik)
-    kolejna = input("Czy chcesz wykonać kolejne obliczenia? (tak/nie): ")
+    print("Result:", result)
+    next = input("Do you wish to perform further calculations? (yes/no): ")
